@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<title>Массив Агрументов arguments</title>
+
+		<script type = "text/javascript">
+			
+			function f(x, y, z) {
+				if (arguments.length != 3) {
+					document.write('<p><b style = "color: red;">ERROR:</b> <em>Требуется три аргумента при вызове. Функция вызвана с ' + arguments.length + '</em>');
+
+				} else {
+					document.write('<p><b style = "color: green;"> Правильный вызов функции.</b> Аргументы: ');
+
+					for (var i = 0; i < arguments.length; i++)
+						document.write(arguments[i] + ', ');
+				}
+			}
+
+			f(1, 2, 3, 4);
+			f(1, 2 ,3);
+			f(1, 2);
+
+		</script>
+
+	</head>
+
+	<body>
+
+		<form action = "LR6.html">
+			<button type = "submit">Вернуться к задаче №1.</button>
+		</form>
+
+	</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<title>Функция в JavaScript</title>
+
+		<script type = "text/javascript">
+			
+			var name;
+			var sname;
+			var age;
+
+			function ask() {
+				name = prompt('Введите своё имя: ');
+				sname = prompt('Введите свою фамилию: ');
+				age = prompt('Введите свой возраст: ');
+			}
+
+			function say() {
+				document.write('Имя: ' + name + '<br/>');
+				document.write('Фамилия: ' + sname + '<br/>');
+				document.write('Возраст: ' + age + '<br/>');
+				document.write('<hr/>');
+			}
+
+			ask();
+			say();
+
+		</script>
+
+	</head>
+
+	<body>
+
+		<form action = "LR6-3.html">
+			<button type = "submit">Задача №3.</button>
+		</form>
+		
+	</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<title>Массив Агрументов arguments</title>
+
+		<script type = "text/javascript">
+			
+			function max(a, b, c) {
+
+				console.log(arguments);
+				var maxValue = Number.NEGATIVE_INFINITY;
+				document.write('<p>Number.NEGATIVE_INFINITY=' + maxValue + '<hr/>');
+
+				for ( var i = 0; i < arguments.length; i++)
+					if (arguments[i] > maxValue) maxValue = arguments[i];
+					return maxValue;
+			}
+
+			var res = max(-33, 33, 777, -666, -22, 888);
+			document.write('<p>Максимальное значение одного из аргументов функции =' + res);
+			document.write('<hr/>');
+
+		</script>
+
+	</head>
+
+	<body>
+
+		<form action = "LR6-9.html">
+			<button type = "submit">Задача №9.</button>
+		</form>
+		
+	</body>
+
+</html>

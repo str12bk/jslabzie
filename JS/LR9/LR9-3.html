@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<meta http-equiv = "Content-Type" content = "text/html; charset = utf-8">
+
+		<title>LR9</title>
+
+		<script>
+			
+			function btnClick() {
+				if (document.Test1.Sex[0].checked) {
+					document.Test1.Sex[1].click();
+				} else {
+					document.Test1.Sex[0].click();
+				}
+			}
+
+		</script>
+
+	</head>
+
+	<body>
+
+		<h1>Метод click группы переключателей</h1>
+
+		<form name = "Test1">
+			
+			<input type = "radio" name = "Sex" value = "Man" checked>Мужской
+
+			<input type = "radio" name = "Sex" value = "Woman">Женский
+
+			<br>Состояние переключателей можно изменить и этой кнопкой.
+
+			<input type = "button" value = "Смена состояния" onclick = "btnClick();">
+
+		</form>
+
+		<hr>
+
+		<form action = "LR9-4.html">
+			
+			<button type = "submit">Задача №4.</button>
+
+		</form>
+
+	</body>
+
+</html>

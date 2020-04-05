@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<title>Создание вложеных объектов через конструктор</title>
+
+		<script type = "text/javascript">
+			
+			var human = new Object();
+
+			human.firstName = "Alex",
+			human.secondName = "Jazun",
+			human.age = 27;
+
+			human.occupation = new Object();
+
+			human.occupation.company = "Microsoft",
+			human.occupation.position = "Web Developer";
+
+			document.write('<p>First name: ' + human.firstName);
+			document.write('<p>Second name: '  + human.secondName);
+			document.write('<p>Age: ' + human.age + ' year\'s old');
+
+			document.write('<p>Company: ' + human.occupation.company);
+			document.write('<p>Position: ' + human.occupation.position);
+			document.write('<hr/>');
+
+		</script>
+
+	</head>
+
+	<body>
+
+		<form action = "LR7-6.html">
+			<button type = "submit">Задача №6.</button>
+		</form>
+
+	</body>
+
+</html>

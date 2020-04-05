@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<title>Методы</title>
+
+		<script type = "text/javascript">
+			
+			var human = {
+				firstName: "Alex",
+				secondName: "Jazun",
+				age: 27,
+				occupation: "<p><img src = 'Images_LR7/Microsoft.jpg' width = '180' height = '180'/>",
+
+				show: function () {
+					document.write('<p>First name: ' + this.firstName);
+					document.write('<p>Second name: ' + this.secondName);
+					document.write('<p>Age: ' + this.age + ' year\'s old.<br/>');
+					document.write(this.occupation + '<br/>');
+				},
+
+				changeWork: function (occupation) {
+					this.occupation = occupation;
+				}
+			}
+
+			human.show();
+			document.write('<hr/>');
+			human.changeWork("<img src = 'Images_LR7/CyberBionic Systematics.jpg' width = '420' height = '240'/>");
+			human.show();
+			document.write('<hr/>');
+
+		</script>
+
+	</head>
+
+	<body>
+
+	</body>
+
+</html>

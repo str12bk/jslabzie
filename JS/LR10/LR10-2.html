@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<title>LR10</title>
+
+	</head>
+
+	<body>
+
+		<form>
+			
+			<script>
+				
+				function sumInput() {
+					let numbers = [];
+
+					while (true) {
+						let value = prompt("Введите число", 0);
+
+						if ( value === "" || value === null || !isFinite(value) )
+							break;
+
+					numbers.push(+value);
+					}
+
+					let sum = 0;
+
+					for (let number of numbers) {
+						sum += numbers;
+					}
+					return sum;
+				}
+
+				alert(sumInput());
+
+			</script>
+
+		</form>
+
+		<form action = "LR10-3.html">
+			
+			<button type = "submit">Задача №3.</button>
+
+		</form>
+
+	</body>
+
+</html>
